@@ -1,2 +1,4 @@
 ---
 # vars file for aws_create_dns_records
+route53_zone_id: ''
+dns_records: []
