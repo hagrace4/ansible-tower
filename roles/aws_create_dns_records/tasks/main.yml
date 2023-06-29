@@ -1,12 +1,9 @@
 ---
 # tasks file for aws_create_dns_records
-- name: Create DNS records - for vanity URL
+- name: Get DNS record
   amazon.aws.route53:
-    state: present
-    zone: "{{ route53_zone_id }}"
-    record: "{{ item.name }}"
-    type: "{{ item.type }}"
-    ttl: "{{ item.ttl }}"
-    value: "{{ item.value }}"
-    wait: true
-  loop: "{{ dns_records }}"
+    state: get
+    hosted_zone_id: Z0616275232MR8FXRWUIA
+    record: ansible-tower-test.com
+    type: NS
+    
