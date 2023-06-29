@@ -1,9 +1,9 @@
 ---
 # tasks file for aws_create_dns_records
-- name: Get DNS record
+- name: Create DNS record
   amazon.aws.route53:
-    state: get
+    state: present
     hosted_zone_id: Z0616275232MR8FXRWUIA
-    record: ansible-tower-test.com
-    type: NS
-    
+    record: test1-ansible-tower-test.com
+    type: TXT
+    value: this is a test
