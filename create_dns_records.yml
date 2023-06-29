@@ -1,5 +1,5 @@
 ---
-- name: test aws_create_dns_records
+- name: Test aws_create_dns_records
   hosts: localhost
   gather_facts: false
   roles:
