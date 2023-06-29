@@ -2,5 +2,7 @@
 - name: Test aws_create_dns_records
   hosts: localhost
   gather_facts: false
+  environment:
+    AWS_REGION: 'us-east-1'
   roles:
     - role: aws_create_dns_records
