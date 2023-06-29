@@ -6,4 +6,4 @@
     hosted_zone_id: Z0616275232MR8FXRWUIA
     record: test1-ansible-tower-test.com
     type: TXT
-    value: this is a test
+    value: "this is a test"
