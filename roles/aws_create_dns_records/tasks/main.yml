@@ -1,6 +1,6 @@
 ---
 # tasks file for aws_create_dns_records
-- name: create DNS records - for vanity URL
+- name: Create DNS records - for vanity URL
   amazon.aws.route53:
     state: present
     zone: "{{ route53_zone_id }}"
